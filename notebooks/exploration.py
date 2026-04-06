@@ -35,5 +35,5 @@ print(df["diagnostic"].value_counts())
 print("\n--- Température moyenne ---")
 print(df.groupby("diagnostic")["temperature"].mean())
 
-print("\n--- Maladie la plus fréquente ---")
+print("\n--- Diagnostic  la plus fréquente ---")
 print(df["diagnostic"].value_counts().idxmax())
