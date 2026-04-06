@@ -1,27 +1,46 @@
-# SenSante
+# SenSante 🏥
+
+Assistant de pré-diagnostic médical pour le Sénégal.
 
 ## Description
-Ce projet consiste à analyser des données médicales de patients à Dakar à l’aide du langage Python et de la bibliothèque pandas.
 
-L’objectif est d’identifier les maladies les plus fréquentes et d’analyser certaines caractéristiques comme la température.
-
-## Technologies utilisées
-- Python
-- Pandas
-- Git
+SenSante utilise le Machine Learning pour aider au pré-diagnostic des maladies courantes (paludisme, grippe, typhoïde) à partir des symptômes du patient.
 
 ## Structure du projet
-- data/ : contient les données des patients
-- notebooks/ : contient le script d’analyse
-- models/ : futurs modèles de Machine Learning
-- api/ : future API
-- frontend/ : future interface utilisateur
 
-## Résultats
-- La maladie la plus fréquente est : sain
-- Le paludisme présente la température moyenne la plus élevée
+- `data/` : Données patients (CSV)
+- `models/` : Modèle ML (à venir)
+- `api/` : API FastAPI (à venir)
+- `frontend/` : Interface web (à venir)
+- `notebooks/` : Scripts d’exploration (exploration.py)
+
+## Installation
+
+Créer un environnement virtuel :
+
+python -m venv venv  
+venv\Scripts\activate  
+
+Installer les dépendances :
+
+pip install -r requirements.txt
+
+## Analyse des données
+
+Le script `exploration.py` permet de :
+
+- afficher les diagnostics  
+- calculer la température moyenne par maladie  
+- identifier la maladie la plus fréquente  
+
+## Version
+
+Version actuelle : v0
 
 ## Auteur
-Yaye Mareme Diop  - L2GLSI - ESP/ UCAD
+
+Yaye Mareme Diop - L2 GLSI - ESP / UCAD
+
 ## Cours
-Integration de Modeles IA - Dr. El Hadji Bassirou TOURE
+
+Intégration de Modèles IA - Dr. El Hadji Bassirou TOURE
