@@ -22,4 +22,6 @@ L’objectif est d’identifier les maladies les plus fréquentes et d’analyse
 - Le paludisme présente la température moyenne la plus élevée
 
 ## Auteur
-Yaye Mareme Diop
+Yaye Mareme Diop  - L2GLSI - ESP/ UCAD
+## Cours
+Integration de Modeles IA - Dr. El Hadji Bassirou TOURE
