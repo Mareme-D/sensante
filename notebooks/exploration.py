@@ -18,7 +18,7 @@ print ( f"\n- - - 5 premiers patients ---")
 print ( df . head () )
 # ===== STATISTIQUES DE BASE =====
 print ( f"\n- - - Statistiques descriptives ---")
-print ( df . describe () . round (2) )
+print ( df . describe () . round (2) 
 # ===== REPARTITION DES DIAGNOSTICS =====
 print ( f"\n- - - Repartition des diagnostics ---")
 diag_counts = df [" diagnostic "]. value_counts ()
