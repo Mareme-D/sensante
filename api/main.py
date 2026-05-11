@@ -32,6 +32,19 @@ app = FastAPI(
     description="Assistant pre-diagnostic medical pour le Senegal",
     version="0.2.0"
 )
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
+app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 # --- Chargement du modele (une seule fois) ---
 print("Chargement du modele...")
@@ -108,4 +121,12 @@ def predict(patient: PatientInput):
         probabilite=round(proba_max, 2),
         confiance=confiance,
         message=messages.get(diagnostic, "Consultez un medecin.")
-    )
+       )
+
+@app.get("/model-info")
+def model_info():
+    return {
+        "type": type(model).__name__,
+        "classes": list(model.classes_),
+        "n_features": len(feature_cols)
+    }
